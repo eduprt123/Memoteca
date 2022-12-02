@@ -1,8 +1,9 @@
 <section class="container">
   <header class="header d-flex">
     <div class="buscar-pensamentos">
-      <input type="search" class="filtro" placeholder="O que você procura?" autofocus [(ngModel)]="filtro"
-        (keyup)="pesquisarPensamentos()">
+      <form action="" [formGroup]="form">
+        <input type="search" class="filtro" placeholder="O que você procura?" autofocus formControlName="filtro">
+      </form>
       <!-- <img src="./../../../../assets/imagens/lupa.png" alt="Lupa azul"> -->
     </div>
     <h2 class="ff-inter">Meu Mural</h2>
